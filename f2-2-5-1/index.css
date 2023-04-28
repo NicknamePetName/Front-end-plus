@@ -86,19 +86,19 @@ a {
   background-size: contain;
 }
 .right > a:nth-child(3)::before {
-  background: url(./images/game.png) no-repeat center ;
+  background: url(./images/game.png) no-repeat center;
   background-size: contain;
 }
 .right > a:nth-child(4)::before {
   background: url(./images/find.png) no-repeat center;
   background-size: contain;
-} 
+}
 
-.right>a:last-child::after {
-  content: '';
+.right > a:last-child::after {
+  content: "";
   position: absolute;
   left: -13px;
   width: 1px;
   height: 14px;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }

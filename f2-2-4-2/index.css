@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 126px;
+    height: 141px;
+    background: #FFFFFF;
+}
+
+img {
+    width: 126px;
+    height: 86px;
+    margin-bottom: 15px;
+}
+
+p:nth-child(2) {
+    width: 107px;
+    height: 17px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+p:last-child {
+    width: 53px;
+    height: 17px;
+    margin: 0 auto;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 400;
+    color: #FD6821;
+}

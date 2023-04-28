@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background: #c4c4c4;
+}
+main {
+  background: #ffffff;
+}
+section {
+  width: 1011px;
+  height: 199px;
+  margin: 0 auto;
+  padding: 29px 0;
+}
+div {
+  position: relative;
+  float: left;
+  width: 126px;
+  height: 141px;
+  margin-right: 51px;
+}
+div:last-child {
+  margin-right: 0;
+}
+img {
+  width: 126px;
+  height: 86px;
+  margin-bottom: 15px;
+}
+
+div p {
+  width: 107px;
+  height: 17px;
+  font-family: "PingFang SC";
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 auto 6px;
+}
+
+div p:last-child {
+  width: 53px;
+  height: 17px;
+  font-weight: 500;
+  color: #fd6821;
+  margin: 0 auto;
+}
+.redmi > p:nth-child(2) {
+  width: 84px;
+}
+.games > p:nth-child(2) {
+  width: 77px;
+}
+
+.air p:nth-child(2) {
+  width: 104px;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  left: 151px;
+  top: 0;
+  width: 1px;
+  height: 86px;
+  background: #DFDFDF;
+}
+div:last-child::after {
+    width: 0;
+}
