@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  div {
+    position: relative;
+    width: 254px;
+    height: 42px;
+  }
+  
+  input {
+    box-sizing: border-box;
+    width: 212px;
+    height: 42px;
+    padding-left: 20px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    color: #AEAEAE;
+    font-weight: 400;
+  }
+  .search {
+    box-sizing: border-box;     
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background: white;
+  }
+  p {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 12px;
+    background: url(./images/search-normal.png) no-repeat center;
+  }
+  
+  input,
+  .search {
+    border: 1px solid #E0E0E0;
+  }
+  
+  .search:hover {
+    background: #FD6821;
+  }
+  div.search:hover > p {
+    background: url(./images/search-hover.png) no-repeat center;
+  }
+  
+  
+  .father {
+    position: relative;
+  }
+  ul {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    box-sizing: border-box;
+    width: 212px;
+    height: 282px;
+    background-color: #FFFFFF;
+    border: 1px solid #FD6821;
+    padding-left: 15px;
+    display: none;
+  }
+  
+  li {
+    height: 17px;
+    line-height: 16.8px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 10px;
+  }
+  
+  input:focus {
+    border: #FD6821 1px solid;
+  }
+  
+  
+  
+  .borther:hover+ul {
+    display: block;
+  }
+  
+  
+  .father {
+    margin-left: 50px;
+  }

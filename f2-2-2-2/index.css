@@ -1,0 +1,53 @@
+/* 清除所有的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+    height: 256px;
+    background: white;
+    text-align: center;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    margin: 22px 35px 16px;
+}
+
+.first {
+    width: 90px;
+    height: 17px;
+    line-height: 17px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 56px;
+    margin-bottom: 4px;
+}
+
+.second {
+    width: 96px;
+    height: 17px;
+    line-height: 17px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 400;
+    color: #A8A8A8;
+    margin-left: 52px;
+    margin-bottom: 8px;
+}
+
+.money {
+    width: 46px;
+    height: 17px;
+    line-height: 17px;
+    font-family: "PingFang SC";
+    font-size: 12px;
+    font-weight: 400;
+    color: #FD6821;
+    margin-left: 77px;
+}

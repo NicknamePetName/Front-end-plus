@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.clearFix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-goods {
+    width: 100%;
+    background: #F5F5F5;
+}
+
+.main-good-list {
+    width: 1048px;
+    margin: 0 auto;
+}
+
+/*商品头部*/
+.title-left {
+    float: left;
+    color: #000000;
+    font-size: 20px;
+    line-height: 54px;
+}
+
+.title-right {
+    float: right;
+}
+
+.title-right>li {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20px;
+    line-height: 54px;
+    color: #999999;
+    font-size: 16px;
+}
+
+.title-right>li.selected {
+    margin-left: 0px;
+    color: #FD6821;
+}
+
+.title-right>li.selected::after {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    left: 1px;
+    width: 30px;
+    height: 2px;
+    background: #FD6821;
+}
+
+.father-one > div,
+.father-two > div {
+    width: 200px;
+    height: 256px;
+    float: left;
+    background: white;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+.father-one > .son-one,
+.father-two > .son-one {
+    margin-left: 0;
+}
+
+.cleraFixT::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.father-three > img {
+    margin-top: 32px;
+    width: 1048px;
+    height: 103px;
+}

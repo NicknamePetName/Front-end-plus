@@ -1,0 +1,48 @@
+/* CSS伪元素————::after/::before */
+/* before */
+选择器::before{
+    /* 使用空白符号占位 */
+    content: '';
+  }
+  
+  /* after */
+  选择器::after{
+    /* 使用空白符号占位 */
+    content: '';
+  }
+
+
+/* CSS伪类————清除浮动 */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* CSS伪类————事件伪类 */
+li:hover{
+    background-color: #47A0FC;
+    color: white;
+}
+/* active————鼠标点击时 */
+/*  正确 
+  a:hover{}    hover必须在active之前
+  a:active{}   active:鼠标点击时的效果，在超链接中常见，（注：点击鼠标不松开）
+  a:focus{}
+    错误 
+  a:active{}
+  a:hover{} */
+/* focus————获取焦点后 */
+/* focus:获取焦点的伪类，一般用于具有焦点的元素，比如input，可以让input获取到焦点后，改变input的边框颜色 */
+
+/* CSS伪类--列表伪类 */
+a:first-child {   /* 匹配其父元素中的第一个子元素 */
+  margin: 0;
+}
+a:last-child {    /* 匹配其父元素中的最后一个子元素 */
+  margin: auto;
+}
+
+a:nth-child(n){   /* 匹配其父元素中的第n个子元素 */
+  margin: auto;   /* 括号里除了写数字还可以写两个特定的单词odd(奇数),even(偶数) */
+}
