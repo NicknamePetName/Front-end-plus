@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    width: 234px;
+    margin: 0;
+    padding: 20px 0px;
+    list-style: none;
+    background-color: #7B8795;
+    color: #ffffff;
+}
+
+ul>li {
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+}
+
+ul>li::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    background: url(./images/right-point.png) no-repeat center;
+    background-size: contain;
+}
+
+ul>li:hover {
+    background: #FD6821;
+    cursor: pointer;
+}

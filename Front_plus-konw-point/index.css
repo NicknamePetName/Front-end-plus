@@ -1,29 +1,30 @@
 /* CSS伪元素————::after/::before */
 /* before */
-选择器::before{
-    /* 使用空白符号占位 */
-    content: '';
-  }
-  
-  /* after */
-  选择器::after{
-    /* 使用空白符号占位 */
-    content: '';
-  }
+选择器::before {
+  /* 使用空白符号占位 */
+  content: '';
+}
+
+/* after */
+选择器::after {
+  /* 使用空白符号占位 */
+  content: '';
+}
 
 
 /* CSS伪类————清除浮动 */
 .clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
-/* CSS伪类————事件伪类 */
-li:hover{
-    background-color: #47A0FC;
-    color: white;
+/* CSS伪类————事件伪类 更多知识点2.3 */
+li:hover {
+  background-color: #47A0FC;
+  color: white;
 }
+
 /* active————鼠标点击时 */
 /*  正确 
   a:hover{}    hover必须在active之前
@@ -36,13 +37,88 @@ li:hover{
 /* focus:获取焦点的伪类，一般用于具有焦点的元素，比如input，可以让input获取到焦点后，改变input的边框颜色 */
 
 /* CSS伪类--列表伪类 */
-a:first-child {   /* 匹配其父元素中的第一个子元素 */
+a:first-child {
+  /* 匹配其父元素中的第一个子元素 */
   margin: 0;
 }
-a:last-child {    /* 匹配其父元素中的最后一个子元素 */
+
+a:last-child {
+  /* 匹配其父元素中的最后一个子元素 */
   margin: auto;
 }
 
-a:nth-child(n){   /* 匹配其父元素中的第n个子元素 */
-  margin: auto;   /* 括号里除了写数字还可以写两个特定的单词odd(奇数),even(偶数) */
+a:nth-child(n) {
+  /* 匹配其父元素中的第n个子元素 */
+  margin: auto;
+  /* 括号里除了写数字还可以写两个特定的单词odd(奇数),even(偶数) */
+}
+
+
+
+p {
+  cursor: pointer;
+  /* cursor 鼠标箭头的变化 */
+  /* 手指，食指 */
+  cursor: default;
+  /* 默认鼠标箭头 */
+  cursor: text;
+  /* 光标 */
+  cursor: move;
+  /* 方向键盘 */
+  cursor: grab;
+  /* 手掌，(布) */
+  cursor: zoom-in;
+  /* 放大 */
+  cursor: zoom-out;
+  /* 缩小 */
+}
+
+
+/* 3.2 CSS装饰--box-shadow*(盒子阴影)/text-shadow(文字阴影) */
+p {
+  /* x 偏移量 | y 偏移量 | 阴影颜色 */
+  box-shadow: 60px -16px teal;
+
+  /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影颜色 */
+  box-shadow: 10px 5px 5px black;
+
+  /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  /* 插页 (阴影向内) | x 偏移量 | y 偏移量 | 阴影颜色 */
+  box-shadow: inset 5em 1em gold;
+
+  /* 任意数量的阴影，以逗号分隔 */
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
+
+  /* 全局关键字 */
+  box-shadow: inherit;
+  box-shadow: initial;
+  box-shadow: unset;
+
+
+
+  /* offset-x | offset-y | blur-radius 阴影模糊半径 | color */
+text-shadow: 1px 1px 2px black;
+
+/* color | offset-x | offset-y | blur-radius */
+text-shadow: #fc0 1px 0 10px;
+
+/* offset-x | offset-y | color */
+text-shadow: 5px 5px #558abb;
+
+/* color | offset-x | offset-y */
+text-shadow: white 2px 5px;
+
+/* offset-x | offset-y
+/* Use defaults for color and blur-radius */
+text-shadow: 5px 10px;
+
+/* Global values 全局关键字 */
+text-shadow: inherit;
+text-shadow: initial;
+text-shadow: unset;
+
+
+
 }

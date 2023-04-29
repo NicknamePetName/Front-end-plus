@@ -1,104 +1,50 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  height: 50px;
+.box {
+  box-sizing: border-box;
+  width: 200px;
+  height: 256px;
   background: #ffffff;
-  border: 1px solid black;
-}
-.clearfix {
-  contain: "";
-  display: block;
-  clear: both;
+  padding-top: 22px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
 }
 
-.left {
-  float: left;
-  margin-left: 110px;
+.box::before {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin: 0px auto 16px;
+  background: url(./images/phone.jpg) no-repeat center;
+  background-size: contain;
 }
-.left > img {
-  float: left;
-  width: 80px;
-  height: 27px;
-  margin: 11px 30px 12px;
-}
-input {
-  width: 470px;
-  height: 30px;
-  margin: 11px auto 9px;
-  background: #f2f2f2;
-  padding-left: 10px;
-  border: #cccccc 1px solid;
-}
-.search {
-  float: right;
-  width: 470px;
-  height: 30px;
-  position: relative;
-}
-.search > img {
-  width: 16px;
-  height: 16.02px;
-  position: absolute;
-  top: 18px;
-  right: 15px;
-}
-.right {
-  float: right;
-  margin-right: 105px;
-}
-a {
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-  width: 24px;
-  height: 12px;
-  margin: 19px 0 auto 37px;
-  font-family: "PingFang SC";
+
+.box h3 {
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
-  font-weight: 400;
+  line-height: 17px;
   color: #000000;
 }
 
-.right > a:last-child {
-  margin-left: 21px;
-}
-.right > a:nth-child(5) {
-  margin-left: 30px;
+.box p {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #A8A8A8;
 }
 
-.right > a:first-child::before,
-.right > a:nth-child(2)::before,
-.right > a:nth-child(3)::before,
-.right > a:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  left: -23px;
-  width: 17px;
-  height: 17px;
-  background: url(./images/first-page.png) no-repeat center;
-  background-size: contain;
-}
-.right > a:nth-child(2)::before {
-  background: url(./images/video.png) no-repeat center;
-  background-size: contain;
-}
-.right > a:nth-child(3)::before {
-  background: url(./images/game.png) no-repeat center ;
-  background-size: contain;
-}
-.right > a:nth-child(4)::before {
-  background: url(./images/find.png) no-repeat center;
-  background-size: contain;
-} 
-
-.right>a:last-child::after {
-  content: '';
-  position: absolute;
-  left: -13px;
-  width: 1px;
-  height: 14px;
-  background: #D9D9D9;
+.box h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FD6821;
 }
