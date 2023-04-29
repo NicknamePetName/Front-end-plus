@@ -1,0 +1,70 @@
+/* 注意，本题无需写样式清除 */
+.container {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+div.medal {
+  position: relative;
+  width: 25px;
+  height: 37px;
+  margin-left: 20px;
+}
+div.medal::after {
+  content: '';
+  position: absolute;
+
+  width: 25px;
+  height: 37px;
+  background: url(./images/icon.png) no-repeat center;
+  background-size: contain;
+}
+
+div.avatar {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-left: 6px;
+}
+div.avatar::after {
+  content: '';
+  position: absolute;
+  
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  background: url(./images/avatar.png) no-repeat center;
+  background-size: contain;
+}
+
+div.content {
+  width: 168px;
+  height: 48px;
+  margin-left: 13px;
+}
+
+.content>.bag {
+  width: 48px;
+  height: 22px;
+  font-family: "PingFang SC";
+  font-size: 16px;
+  font-weight: 500;
+  color: #646464;
+  margin-top: 2px ;
+}
+
+.content>.sentence {
+  width: 168px;
+  height: 18px;
+  line-height: 18px;
+  font-family: "PingFang SC";
+  font-size: 12px;
+  font-weight: 400;
+  word-spacing: 0.12px;
+  color: #808080;
+  margin-top: 3px;
+}

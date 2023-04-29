@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+ul {
+  box-sizing: border-box;
+  width: 400px;
+  height: 115px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  display: flex;
+  padding: 20px;
+}
+
+li {
+  width: 50px;
+  height: 75px;
+  font-size: 14px;
+  margin-right: 23px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 5px;
+}
+li>div {
+  width: 44px;
+  height: 20px;
+  font-family: "PingFang SC";
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  margin: 0 auto;
+}
+
+.vip>div {
+  width: 28px;
+}
+
+.welfare>div {
+  width: 56px;
+  margin-left: -3px;
+}
+
+.font>div {
+  width: 28px;
+}

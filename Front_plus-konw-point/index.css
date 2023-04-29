@@ -99,26 +99,53 @@ p {
 
 
   /* offset-x | offset-y | blur-radius 阴影模糊半径 | color */
-text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px black;
 
-/* color | offset-x | offset-y | blur-radius */
-text-shadow: #fc0 1px 0 10px;
+  /* color | offset-x | offset-y | blur-radius */
+  text-shadow: #fc0 1px 0 10px;
 
-/* offset-x | offset-y | color */
-text-shadow: 5px 5px #558abb;
+  /* offset-x | offset-y | color */
+  text-shadow: 5px 5px #558abb;
 
-/* color | offset-x | offset-y */
-text-shadow: white 2px 5px;
+  /* color | offset-x | offset-y */
+  text-shadow: white 2px 5px;
 
-/* offset-x | offset-y
+  /* offset-x | offset-y
 /* Use defaults for color and blur-radius */
-text-shadow: 5px 10px;
+  text-shadow: 5px 10px;
 
-/* Global values 全局关键字 */
-text-shadow: inherit;
-text-shadow: initial;
-text-shadow: unset;
+  /* Global values 全局关键字 */
+  text-shadow: inherit;
+  text-shadow: initial;
+  text-shadow: unset;
+}
+
+/*4.2 CSS Flex布局 */
+.container {
+  display: flex;
+  /* flex:它最显著的效果就是把原本从上到下排列的块状元素变成水平排列 */
+  /* 注：设为Flex布局以后，第一代子元素的float、clear、vertical-align属性将失效 */
+  /* 采用Flex布局的元素，称为Flex容器，简称"容器",它的所有子元素成为Flex项目，简称"项目" */
+}
+
+/* 4.2 justify-content(控制水平方向分布) 和 align-items(控制垂直方向分布) */
+.container {
+  /* justify-content:有六个有效值： */
+  justify-content: flex-start ;      /* 项目向水平方向的起点对齐 */
+  justify-content: flex-end;         /* 项目向水平方向的终点对齐 */
+  justify-content: center;           /* 项目在水平方向上局中 */
+  justify-content: space-between;    /* 在每行上均匀分配项目,相邻项目间距离相同 （#| x | x |#） */
+  justify-content: space-around;     /* 在每行上均匀分配项目 （# x |  2x  |  2x  | x #）      */
+  justify-content: space-evenly;     /* 在每行上均匀分配项目,各行间距相同（# x | x | x | x #） */
 
 
+  /* align-items:有五个有效值 */
+  align-items: flex-start;           /* 项目向垂直方向的起点对齐 */
+  align-items: flex-end;             /* 项目向垂直方向的终点对齐 */
+  align-items: center;               /* 项目在垂直方向居中 */
+  align-items: stretch;              /* 项目在垂直方向被拉伸到与容器相同的高度或宽度 */
+  align-items: baseline;             /* 按项目的第一行文字的基线*对齐 */
 
+
+  
 }
