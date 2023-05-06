@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.relation {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background: #fff;
+}
+
+.relation .item {
+  width: 50px;
+  flex: none;
+  text-align: center;
+}
+
+.relation .item .avatar-tag {
+  width: 50px;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.relation .item .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(./images/avatar.png) no-repeat center/contain;
+}
+.relation .item .tag {
+  position: absolute;
+  bottom: -5px; 
+  right: -1px;
+  width: 20px;
+  height: 20px;
+  background: url(./images/vip-circle.png) no-repeat center/contain;
+}
+
+.relation .item .name {
+  width: 48px;
+  height: 16px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.follow-list,
+.fans-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.relation>div:first-child {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  padding: 10px 242px 9px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #333333;
+
+  border-bottom: 1px solid #F2F2F5;
+  margin-bottom: 10px;
+}
+
+.follow,
+.fans {
+  width: 268px;
+  height: 135px;
+  margin-left: 16px;
+  padding-top: 14px;
+
+  border-bottom: 1px solid #F2F2F5;
+}
+.title {
+  width: 256px;
+  height: 19px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  color: #333333;
+  margin-bottom: 9px;
+}
+.more {
+  display: flex;
+  box-sizing: border-box;
+  width: 300px;
+  height: 36px;
+  padding-top:  10px;
+}
+.more>span:first-child {
+  width: 48px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #333333;
+  margin-left: 118px;
+}
+.more .right-icon {
+  display: block;
+  width: 4px;
+  height: 7px;
+  background: url(./images/arrow-right.png) no-repeat center/contain;
+  margin-top: 4px;
+  margin-left: 4px;
+}

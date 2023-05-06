@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.container {
+  width: 160px;
+  height: 215px;
+  background: url(./images/bg-image.png) no-repeat center / contain;
+  padding: 10px 0 10px 8px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .taglist {
+  font-size: 11px;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .taglist .tag {
+  height: 15px;
+  line-height: 13px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 0 7px 0 6px;
+  margin: 0 4px 4px 0;
+  box-sizing: border-box;
+
+}
+
+.title {
+  margin: 0 0 5px 7px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  margin: 0 0 2px 7px;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.6);
+}

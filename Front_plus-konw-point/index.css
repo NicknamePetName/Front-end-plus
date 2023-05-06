@@ -166,4 +166,36 @@ p {
   flex-direction: row-reverse;      /* 主轴在水平方向，起点在右端 */
   flex-direction: column;           /* 主轴为垂直方向，起点在上沿 */
   flex-direction: column-reverse;   /* 主轴为垂直方向，起点在下沿 */
-}  
+    /* 默认情况：justify-content控制水平方向，align-items控制垂直方向
+     设置了flex-direction:justify-content控制垂直方向，align-items控制水平方向 */
+}
+
+
+/* 5.1 单行文本超出省略 */
+.container {
+  /* 1.强制不换行  */
+  white-space: nowrap;  /* html5推荐使用 */
+
+  /* 2.元素内容溢出 overflow有5个有效值*/
+  overflow: visible;   /* 默认值。内容不会被修剪，会呈现在元素之外 */
+  overflow: hidden;    /* 内容会被修剪，并且超出的内容不可见 */
+  overflow: inherit;   /* 规定应该从父元素继承overflow属性的值 */
+  overflow: scroll;    /* 内容会被修剪，浏览器会显示滚动条以便查看超出内容 */
+  overflow: auto;      /* 由浏览器定夺，如果内容被修剪，就显示滚动条 */
+
+  /* 3.文本溢出shenglue */
+  text-overflow: clip;  /* 默认值，表示在内容区域的极限处截断文本，可以简单的理解成超出部分被一刀切掉了 */
+  text-overflow: ellipsis;/* 表示用一个省略号（“……”）来表示被截断的文本 */
+}
+
+
+
+
+
+
+
+
+
+
+
+

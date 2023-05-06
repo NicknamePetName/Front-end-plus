@@ -1,0 +1,269 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.person-info {
+  /* margin: 0 auto;可使内容在整个页面中水平居中 */
+  margin: 100px auto;  
+  width: 600px;
+  height: 608px;
+  /* background: #46dae4; */
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding-top: 26px;
+
+}
+
+.approve {
+  position: relative;
+  box-sizing: border-box;
+  width: 180px;
+  height: 56px;
+  background: #FDB73D;
+  border-radius: 100px;
+  padding: 8px 24px 8px 60px;
+  margin: 0 0 20px 40px;
+}
+.approve>p {
+  width: 96px;
+  height: 40px;
+  line-height: 40px;
+  font-family: "PingFang SC";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.approve::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  
+  width: 28px;
+  height: 24.5px;
+  background: url(./images/vip.png) no-repeat center;
+  background-size: contain;
+}
+.approve::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -22px;
+
+  width: 2px;
+  height: 56px;
+  background: #D9D9D9;
+}
+.top {
+  display: flex;
+
+}
+.flag,
+.pada {
+  width: 32px;
+  height: 28px;
+  margin: 14px 20px 34px 44px;
+}
+.pada {
+  margin-left: 0;
+}
+.abstract {
+  box-sizing: border-box;
+  width: 600px;
+  height: 62px;
+  border-bottom: 2px solid #F2F2F5;
+  margin-bottom: 20px;
+}
+.abstract>p {
+  width: 264px;
+  height: 34px;
+
+  font-family: "PingFang SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #141414;
+  margin-left: 40px;
+}
+
+.location {
+  position: relative;
+  box-sizing: border-box;
+  width: 536px;
+  height: 56px;
+  border-bottom: 2px solid #F2F2F5;
+  margin-left: 32px;
+  margin-bottom: 20px;
+}
+.location>p {
+  width: 48px;
+  height: 34px;
+
+  font-family: "PingFang SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #000000;
+  margin-left: 46px;
+  margin-bottom: 20px;
+}
+.location::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 10px;
+
+  width: 20px;
+  height: 26.75px;
+  background: url(./images/address.png) no-repeat center;
+  background-size: contain;
+}
+.intro {
+  position: relative;
+  box-sizing: border-box;
+  width: 536px;
+  height: 90px;
+  border-bottom: 2px solid #F2F2F5;
+  margin-left: 32px;
+  margin-bottom: 20px;
+}
+.intro>p {
+  width: 322px;
+  height: 68px;
+  
+  font-family: "PingFang SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #000000;
+  margin-left: 46px;
+}
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 10px;
+
+  width: 22px;
+  height: 24px;
+  background: url(./images/file.png) no-repeat center;
+  background-size: contain;
+}
+
+.link {
+  position: relative;
+  box-sizing: border-box;
+  width: 536px;
+  height: 90px;
+  border-bottom: 2px solid #F2F2F5;
+  margin-left: 32px;
+  margin-bottom: 20px;
+}
+.link>p {
+  width: 382px;
+  height: 68px;
+
+  font-family: "PingFang SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #000000;
+  margin-left: 46px;
+}
+.link p a {
+  color: #F7691D;
+}
+.link::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+
+  width: 24px;
+  height: 24px;
+  background: url(./images/link.png) no-repeat center;
+  background-size: contain;
+}
+
+.tag {
+  box-sizing: border-box;
+  width: 600px;
+  height: 56px;
+  border-bottom: 2px solid #F2F2F5;
+  margin-bottom: 20px;
+}
+.tag>p {
+  width: 152px;
+  height: 34px;
+
+  font-family: "PingFang SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #000000;
+  margin-left: 78px;
+}
+.tag p span {
+  color: #F7691D;
+}
+
+.examine {
+  position: relative;
+  width: 96px;
+  height: 32px;
+
+  font-family: "PingFang SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333333;
+  text-align: center;
+  margin-left: 244px;
+}
+.examine::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -16px;
+
+  width: 8px;
+  height: 14px;
+  background: url(./images/arrow-right.png) no-repeat center;
+  background-size: contain;
+}
+.examine:hover,
+span:hover,
+.location>p:hover {
+  cursor: pointer;
+}
