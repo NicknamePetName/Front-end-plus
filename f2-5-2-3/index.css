@@ -1,0 +1,61 @@
+/* 注意，本题无需写样式清除 */
+.card {
+  border-top: 1px solid #feba64;
+  width: 270px;
+  padding-bottom: 15px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.title {
+  height: 35px;
+  padding: 0 12px 0 10px;
+  border-bottom: 1px solid #eff0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title .author {
+  display: flex;
+  align-items: center;
+}
+.title .arrow-icon {
+  width: 6px;
+  height: 10px;
+  background: url(./images/arrow-right.png) no-repeat center / contain;
+}
+.title .avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+.title .name {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+.option {
+  margin: 0 10px;
+  padding: 11px 0 9px;
+  display: flex;
+  align-items: center;
+}
+.option .option-txt {
+  font-size: 15px;
+  color: #333333;
+}
+.option .heart-icon {
+  width: 16px;
+  height: 17px;
+  background: url(./images/heart.png) no-repeat center / 14px 13px;
+  margin-right: 7px;
+}
+.txt {
+  background: #f6f7f8;
+  padding: 5px 4px;
+  font-size: 14px;
+  color: #808080;
+  margin: 0 10px;
+}
+.txt span {
+
+}
