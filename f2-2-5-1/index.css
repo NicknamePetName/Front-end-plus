@@ -6,7 +6,7 @@
 header {
   height: 50px;
   background: #ffffff;
-  border: 1px solid black;
+  border: 1px solid #cccccc;
 }
 .clearfix {
   contain: "";
@@ -30,7 +30,12 @@ input {
   margin: 11px auto 9px;
   background: #f2f2f2;
   padding-left: 10px;
-  border: #cccccc 1px solid;
+  border: none;
+  outline: 0;
+}
+input:focus {
+  border: 1px solid #ff830a;
+  background: #fff;
 }
 .search {
   float: right;

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.test {
+  width: 20px;
+  /* 可以加减乘除 */
+  height: 20px;
+}
+
+main .double .item .links {
+  text-align: center;
+}
+
+main .double .item .links a {
+  margin-right: 20px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  /* <==>  */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button_underline {
+  text-decoration: underline;
+}
