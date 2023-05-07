@@ -1,0 +1,9 @@
+@mixin avatar-circle(???) {
+  width: ???;
+  height: ???;
+  border-radius: 50%;
+}
+
+img {
+  @include avatar-circle(???);
+}

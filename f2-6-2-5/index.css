@@ -1,0 +1,23 @@
+.praised-icon,
+.repeat-icon,
+.share-icon {
+  width: 16px;
+  height: 16px;
+  margin: 10px auto;
+  background-position: center;
+  background-size: contain;
+}
+
+.praised-icon {
+  background-image: url(https://document.youkeda.com/P3-2-HTML-CSS/weibo/praised-line.png);
+}
+
+.repeat-icon {
+  background-image: url(https://document.youkeda.com/P3-2-HTML-CSS/weibo/repeat-line.png);
+}
+
+.share-icon {
+  background-image: url(https://document.youkeda.com/P3-2-HTML-CSS/weibo/share-line.png);
+}
+
+/*# sourceMappingURL=index.css.map */

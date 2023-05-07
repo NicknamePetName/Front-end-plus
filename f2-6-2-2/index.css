@@ -1,0 +1,13 @@
+.box {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #3e425f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=index.css.map */

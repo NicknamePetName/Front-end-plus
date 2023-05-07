@@ -1,0 +1,15 @@
+$radius: ???;
+???
+
+.box {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: ???;
+  background-color: $bgColor;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

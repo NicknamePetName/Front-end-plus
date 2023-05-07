@@ -1,0 +1,12 @@
+.container {
+  font-size: 20px;
+  color: red;
+}
+.container.color, .container-color {
+  color: green;
+}
+.container .color {
+  color: blue;
+}
+
+/*# sourceMappingURL=index.css.map */

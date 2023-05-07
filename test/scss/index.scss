@@ -1,31 +1,33 @@
-$width: 20px;     //变量
-.test {
-    width: $width;   //可以加减乘除 
-    height: #{$width}; // #{} 插值法，几乎可以在scss样式表的任何地方使用
-
-   
-}
-
-//嵌套
-main .double .item .links {
-    text-align: center;
-    a {
-      margin-right: 20px;
+body {
+    margin: 0;
+  }
+  
+  ul {
+    width: 234px;
+    margin: 0px;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #7B8795;
+    color: #FFFFFF;
+  
+    li {
+      position: relative;
+      height: 42px;
+      line-height: 42px;
+      padding-left: 30px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: 20px;
+  
+        width: 12px;
+        height: 12px;
+        background: url(./images/right-point.png) no-repeat center / contain;
+      }
+      &:hover {
+        background: #FD6821;
+      }
     }
-}
-//父选择器 &
-a {                                   
-    font-weight: bold;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-//父选择器特殊用法
-.button {                   // <==>            //  .button {
-    font-weight: bold;                         //      font-weight: bold;
-    text-decoration: none;                     //      text-decoration: none;
-    &_underline {                              //   }
-        text-decoration: underline;            //   .button_underline {
-    }                                          //       text-decoration: none;
-}       
+  }
+  

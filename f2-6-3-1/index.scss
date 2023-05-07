@@ -1,0 +1,11 @@
+.container {
+  font-size: 20px;
+  color: red;
+  &.color,
+  &-color {
+    color: green;
+  }
+  .color {
+    color: blue;
+  }
+}
