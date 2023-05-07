@@ -1,14 +1,10 @@
-$radius: 4px;
-$bgColor: 3e425f;
-
 .box {
   width: 250px;
   height: 100px;
   margin: 0 auto;
-  border-radius: $radius;
-  background-color: $bgColor;
+  border-radius: 4px;
+  background-color: 3e425f;
   color: #fff;
-
   display: flex;
   align-items: center;
   justify-content: center;

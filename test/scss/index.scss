@@ -1,33 +1,15 @@
-body {
-    margin: 0;
-  }
-  
-  ul {
-    width: 234px;
-    margin: 0px;
-    padding: 20px 0;
-    list-style: none;
-    background-color: #7B8795;
-    color: #FFFFFF;
-  
-    li {
-      position: relative;
-      height: 42px;
-      line-height: 42px;
-      padding-left: 30px;
-      &::after {
-        content: '';
-        position: absolute;
-        top: 15px;
-        right: 20px;
-  
-        width: 12px;
-        height: 12px;
-        background: url(./images/right-point.png) no-repeat center / contain;
-      }
-      &:hover {
-        background: #FD6821;
-      }
-    }
-  }
-  
+$radius: 4px;
+$bgColor: 3e425f;
+
+.box {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: $radius;
+  background-color: $bgColor;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
