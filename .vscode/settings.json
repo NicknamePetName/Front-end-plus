@@ -24,6 +24,5 @@
             "extension": ".min.css" //设置编译输出的文件名
         } */
     ],
-    "easysass.targetDir": "./Test/css/", //提供 css 输出路径的设置（可以是绝对路径或者相对路径）
-    
+    "easysass.targetDir": "./test/css/", //提供 css 输出路径的设置（可以是绝对路径或者相对路径）
 }
