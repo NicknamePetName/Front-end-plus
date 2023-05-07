@@ -1,4 +1,31 @@
-main {
-    height: 2px;
-    width: 335%;
+$width: 20px;     //变量
+.test {
+    width: $width;   //可以加减乘除 
+    height: #{$width}; // #{} 插值法，几乎可以在scss样式表的任何地方使用
+
+   
 }
+
+//嵌套
+main .double .item .links {
+    text-align: center;
+    a {
+      margin-right: 20px;
+    }
+}
+//父选择器 &
+a {                                   
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+//父选择器特殊用法
+.button {                   // <==>            //  .button {
+    font-weight: bold;                         //      font-weight: bold;
+    text-decoration: none;                     //      text-decoration: none;
+    &_underline {                              //   }
+        text-decoration: underline;            //   .button_underline {
+    }                                          //       text-decoration: none;
+}       

@@ -1,0 +1,94 @@
+$width: 20px; //变量
+
+.test {
+    width: $width; //可以加减乘除 
+    height: #{$width}; // #{} 插值法，几乎可以在scss样式表的任何地方使用
+
+
+}
+
+//嵌套
+main .double .item .links {
+    text-align: center;
+
+    a {
+        margin-right: 20px;
+    }
+}
+
+//父选择器 &
+a {
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//父选择器特殊用法
+.button {
+    // <==>            //  .button {
+    font-weight: bold; //      font-weight: bold;
+    text-decoration: none; //      text-decoration: none;
+
+    &_underline {
+        //   }
+        text-decoration: underline; //   .button_underline {
+    }
+
+    //       text-decoration: none;
+}
+
+
+// 6.4 复用：mixin/include
+@mixin square {
+    width: 100px;
+    height: 100px;
+}
+
+// 应用：
+.user-avatar {
+    @include square;
+}
+
+.admin-avatar {
+    @include square;
+}
+
+//有参数混合  注：参数无默认值
+@mixin square($size) {  //作用不大
+    width: $size;
+    height: $size;
+}
+
+@mixin square($size: 100px) {
+    width: $size;
+    height: $size;
+}
+
+// 应用
+// 不传参数就会使用默认的值 100px
+.avatar {
+    @include square;
+}
+// 传入参数就会使用传入的值 200px
+.avatar-200 {
+    @include square($size: 200px);
+}
+
+
+/* 7.1 响应式布局 */
+/* 7.2 媒体查询 */
+@media screen and (max-width: 900px) {   //media媒体查询关键词,and 逻辑操作符
+    .side {                              //.side 符合条件时应用的样式
+        display: none;                   //()：括号中为  媒体查询条件   
+        display: none;                   // screen(针对屏幕)：告知设备在打印页面时使用衬线字体，在
+    }                                    //屏幕上显示时用无衬线字体。如果你的网页不需要考虑用户去打
+}                                        //印时，直接把代码中的 "sereen and" 去掉
+@media screen and (min-width: 900px) and (max-width: 1080px) {    
+    .side {                              //max-width:最大宽度   <=900px 时生效
+        display: none;                   //min-width:最小宽度   > 900px 时生效
+        display: none;                   //and:组合条件
+       }                                   
+}           

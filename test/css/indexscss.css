@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.test {
+  width: 20px;
+  height: 20px;
+}
+
+main .double .item .links {
+  text-align: center;
+}
+
+main .double .item .links a {
+  margin-right: 20px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button_underline {
+  text-decoration: underline;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.admin-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.avatar-200 {
+  width: 200px;
+  height: 200px;
+}
+
+/* 7.1 响应式布局 */
+/* 7.2 媒体查询 */
+@media screen and (max-width: 900px) {
+  .side {
+    display: none;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+  .side {
+    display: none;
+    display: none;
+  }
+}
