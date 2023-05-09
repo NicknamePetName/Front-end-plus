@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 920px;
+  height: 300px;
+  background-image: url(https://img.t.sinajs.cn/t5/skin/public/profile_cover/001.jpg);
+  background-repeat: no-repeat;
+  /* background-position: ??? */
+  background-position: bottom center;
+  /* background-size: ??? */
+  background-size: contain;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.banner .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fe9524;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.banner .btns {
+  width: 300px;
+  height: 40px;
+  background: #58aff9;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.main {
+  display: flex;
+  height: 300px;
+  width: 920px;
+  margin: 0 auto;
+}
+.main .side {
+  flex: none;
+  width: 300px;
+  background: #5dccfb;
+  margin-right: 20px;
+}
+.main .core {
+  flex: 1;
+  background: #34d2c5;
+}
+
+@media screen and (max-width: 900px) {
+  .banner,
+.main {
+    /* width: ??? */
+    width: 600px;
+  }
+
+  .main .side {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

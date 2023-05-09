@@ -38,6 +38,8 @@
 @media screen and (max-width: 600px) {
   .topnav {
     /* ??? */
+    display: flex;
+    flex-direction: column;
   }
   .column {
     width: 100%;

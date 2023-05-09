@@ -1,33 +1,49 @@
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
-ul {
-  width: 234px;
-  margin: 0px;
-  padding: 20px 0;
-  list-style: none;
-  background-color: #7B8795;
-  color: #FFFFFF;
+.topnav {
+  background-color: #333;
+  display: flex;
 }
 
-ul li {
-  position: relative;
-  height: 42px;
-  line-height: 42px;
-  padding-left: 30px;
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-ul li::after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  width: 12px;
-  height: 12px;
-  background: url(./images/right-point.png) no-repeat center/contain;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-ul li:hover {
-  background: #FD6821;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: none;
+  width: calc(100% / 3);
+  padding: 0 4px;
+}
+
+.column img {
+  width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    /* ??? */
+    display: flex;
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
 }
