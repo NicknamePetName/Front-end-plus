@@ -1,9 +1,9 @@
-@mixin avatar-circle(???) {
-  width: ???;
-  height: ???;
+@mixin avatar-circle($width:30px) {
+  width: $width;
+  height: $width;
   border-radius: 50%;
 }
 
 img {
-  @include avatar-circle(???);
+  @include avatar-circle($width:34px);
 }
