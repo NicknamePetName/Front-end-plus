@@ -29,7 +29,7 @@
                 margin-right: 2px;
               }
 
-              @each $icon in v-square, level, flag, panda, v-blue {
+              @each $icon in v-square, level, flag, panda, v-blue, level6 {
                 .#{$icon}-icon {
                   width: 16px;
                   height: 16px;
@@ -91,6 +91,60 @@
                   font-size: 12px;
                   color: #eb7350;
                   line-height: unset;
+                }
+              }
+            }
+            .repeat-message {
+              margin: 5px -28px -6px -80px;
+              padding: 9px 10px 8px 80px;
+              background: #f2f2f5;
+              font-size: 12px;
+              color: #333333;
+              .info {
+                display: flex;
+                align-items: center;
+              }
+              .repeat-core {
+                .repeat-text {
+                  line-height: 21px;
+                  a {
+                    color: #eb7350;
+                    text-decoration: none;
+                  }
+                  .heart-icon {
+                    vertical-align: -2px;
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background: url(./images/heart.png) no-repeat center /
+                      contain;
+                  }
+                }
+                .pic {
+                  margin-top: 6px;
+                  font-size: 0;
+                  img {
+                    width: 167px;
+                    height: 223px;
+                  }
+                }
+                .addition {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-top: 8px;
+                  .text {
+                    line-height: unset;
+                    font-size: 12px;
+                    color: #808080;
+                  }
+                  .message-option {
+                    height: fit-content;
+                    .item {
+                      width: 76px;
+                      height: 13px;
+                    }
+                  }
                 }
               }
             }

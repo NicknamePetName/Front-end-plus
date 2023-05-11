@@ -42,3 +42,15 @@ p {
     display: flex;
   }
 }
+
+@media screen and (max-width: 900px) {
+  // 修改banner和banner以下部分的宽度
+  .container .banner,
+  .container main {
+    width: 600px;
+  }
+  // 隐藏左侧栏
+  .container .main-left {
+    display: none;
+  }
+}
