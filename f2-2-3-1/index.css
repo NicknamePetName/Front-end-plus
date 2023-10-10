@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
 div {
     position: relative;
     width: 254px;
@@ -17,8 +18,9 @@ input {
     font-size: 12px;
     font-weight: 400;
 }
+
 .search {
-    box-sizing: border-box;     
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     right: 0;
@@ -26,6 +28,7 @@ input {
     height: 42px;
     background: white;
 }
+
 p {
     display: block;
     width: 18px;
@@ -42,6 +45,7 @@ input,
 .search:hover {
     background: #FD6821;
 }
-div.search:hover > p {
+
+div.search:hover>p {
     background: url(./images/search-hover.png) no-repeat center;
 }
