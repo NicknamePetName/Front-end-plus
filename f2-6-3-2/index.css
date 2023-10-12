@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   width: 254px;
   height: 42px;
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #e0e0e0;
   position: relative;
 }
@@ -35,8 +35,4 @@ body {
 }
 .search-box .search-icon:hover {
   background: #fd6821 url(./images/search-hover.png) no-repeat center/16px 16px;
-}
-
-/*# sourceMappingURL=index.css.map */
-
-
+}/*# sourceMappingURL=index.css.map */

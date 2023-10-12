@@ -53,14 +53,11 @@
 
 @media screen and (max-width: 900px) {
   .banner,
-.main {
+  .main {
     /* width: ??? */
     width: 600px;
   }
-
   .main .side {
     display: none;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

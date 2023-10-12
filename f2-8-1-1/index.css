@@ -304,7 +304,7 @@ header .right .regist-login li:nth-child(2) {
   display: flex;
   align-items: center;
   padding-top: 13px;
-  padding-left: calc(16px + 4px);
+  padding-left: 20px;
   margin-bottom: 10px;
 }
 .container main .main-left .person-info .verify-info .verify {
@@ -349,7 +349,7 @@ header .right .regist-login li:nth-child(2) {
 .container main .main-left .person-info .introduce {
   color: #141414;
   padding-bottom: 13px;
-  padding-left: calc(16px + 4px);
+  padding-left: 20px;
 }
 .container main .main-left .person-info .detail {
   border-top: 1px solid #f2f2f5;
@@ -441,6 +441,7 @@ header .right .regist-login li:nth-child(2) {
 }
 .container main .main-left .ranking .flower .fl-info .fl-info-btn {
   padding: 0 10px;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -746,6 +747,4 @@ a {
   margin: 15px auto 0 auto;
   padding-bottom: 165px;
   display: flex;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

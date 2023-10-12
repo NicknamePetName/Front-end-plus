@@ -3,9 +3,14 @@
   height: 100px;
   margin: 0 auto;
   border-radius: 4px;
-  background-color: 3e425f;
+  background-color: calc(infinity * 1f);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }

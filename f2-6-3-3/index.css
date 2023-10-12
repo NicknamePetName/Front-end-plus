@@ -23,10 +23,8 @@ ul li::after {
   right: 20px;
   width: 12px;
   height: 12px;
-  background: url(./images/right-point.png) no-repeat center / contain;
+  background: url(./images/right-point.png) no-repeat center/contain;
 }
 ul li:hover {
   background: #FD6821;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
