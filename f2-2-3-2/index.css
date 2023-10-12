@@ -93,7 +93,6 @@ input:hover {
   border: 1px #FD6821 solid;
 }
 
-
 input:focus+ul {
   display: block;
 }

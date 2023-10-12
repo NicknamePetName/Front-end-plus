@@ -1,9 +1,9 @@
 {
+    
     "easysass.compileAfterSave": true, //为false避免这类文件编辑保存后被编译为无效，css 需要手动删除的尴尬。
     "easysass.excludeRegex": "",
     
     "easysass.formats": [
-
 
 
         //nested：嵌套缩进的 css 代码。
@@ -14,15 +14,20 @@
         {
             "format": "expanded",
             "extension": ".css" //设置编译输出的文件名
-        }
-        /* {
-            "format": "compressed",
-            "extension": ".css.map" //设置编译输出的文件名
-        }, */
-        /* {
+        },
+        // {
+        //     "format": "expanded",
+        //     "extension": ".css.map"
+        // },
+        {
             "format": "compressed",
             "extension": ".min.css" //设置编译输出的文件名
-        } */
+        }
     ],
-    "easysass.targetDir": "./test/css/" //提供 css 输出路径的设置（可以是绝对路径或者相对路径）
+    // "easysass.targetDir": "./test/css/" //提供 css 输出路径的设置（可以是绝对路径或者相对路径）
+    "easysass.targetDir": null //null为当前目录
+
+
+    
+    
 }
